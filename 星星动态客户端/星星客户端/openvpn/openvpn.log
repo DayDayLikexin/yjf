@@ -1,0 +1,53 @@
+Thu Sep 17 16:24:12 2015 OpenVPN 2.2.2-ccvpn i686-pc-mingw32 [SSL] [LZO2] [PKCS11] built on Mar 17 2013
+Enter Auth Username:Enter Auth Password:
+Thu Sep 17 16:24:12 2015 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info.
+Thu Sep 17 16:24:12 2015 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Thu Sep 17 16:24:12 2015 NOTE: --script-security method='system' is deprecated due to the fact that passed parameters will be subject to shell expansion
+Thu Sep 17 16:24:13 2015 Control Channel Authentication: using 'ta.key' as a OpenVPN static key file
+Thu Sep 17 16:24:13 2015 Outgoing Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Sep 17 16:24:13 2015 Incoming Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Sep 17 16:24:13 2015 LZO compression initialized
+Thu Sep 17 16:24:13 2015 Control Channel MTU parms [ L:1542 D:166 EF:66 EB:0 ET:0 EL:0 ]
+Thu Sep 17 16:24:13 2015 Socket Buffers: R=[8192->8192] S=[8192->8192]
+Thu Sep 17 16:24:13 2015 Data Channel MTU parms [ L:1542 D:1386 EF:42 EB:135 ET:0 EL:0 AF:3/1 ]
+Thu Sep 17 16:24:13 2015 Local Options hash (VER=V4): '504e774e'
+Thu Sep 17 16:24:13 2015 Expected Remote Options hash (VER=V4): '14168603'
+Thu Sep 17 16:24:13 2015 UDPv4 link local: [undef]
+Thu Sep 17 16:24:13 2015 UDPv4 link remote: 199.241.147.178:9001
+Thu Sep 17 16:24:13 2015 TLS: Initial packet from 199.241.147.178:9001, sid=127a2285 287fdac1
+Thu Sep 17 16:24:13 2015 WARNING: this configuration may cache passwords in memory -- use the auth-nocache option to prevent this
+Thu Sep 17 16:24:14 2015 VERIFY OK: depth=1, /C=CN/ST=BJ/L=BEIJING/O=D/CN=VPNSERVER/emailAddress=MY@OPENVPN.COM
+Thu Sep 17 16:24:14 2015 VERIFY OK: depth=0, /C=CN/ST=BJ/L=BEIJING/O=D/CN=server01/emailAddress=MY@OPENVPN.COM
+Thu Sep 17 16:24:14 2015 Data Channel Encrypt: Cipher 'BF-CBC' initialized with 128 bit key
+Thu Sep 17 16:24:14 2015 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Sep 17 16:24:14 2015 Data Channel Decrypt: Cipher 'BF-CBC' initialized with 128 bit key
+Thu Sep 17 16:24:14 2015 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Sep 17 16:24:14 2015 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 1024 bit RSA
+Thu Sep 17 16:24:14 2015 [server01] Peer Connection Initiated with 199.241.147.178:9001
+Thu Sep 17 16:24:17 2015 SENT CONTROL [server01]: 'PUSH_REQUEST' (status=1)
+Thu Sep 17 16:24:17 2015 PUSH: Received control message: 'PUSH_REPLY,redirect-gateway def1,dhcp-option DNS 8.8.8.8,dhcp-option DNS 8.8.4.4,route 192.168.123.1,topology net30,ping 2,ping-restart 5,ifconfig 192.168.123.10 192.168.123.9'
+Thu Sep 17 16:24:17 2015 OPTIONS IMPORT: timers and/or timeouts modified
+Thu Sep 17 16:24:17 2015 OPTIONS IMPORT: --ifconfig/up options modified
+Thu Sep 17 16:24:17 2015 OPTIONS IMPORT: route options modified
+Thu Sep 17 16:24:17 2015 OPTIONS IMPORT: --ip-win32 and/or --dhcp-option options modified
+Thu Sep 17 16:24:17 2015 ROUTE default_gateway=192.168.2.1
+Thu Sep 17 16:24:17 2015 TAP-WIN32 device [Thu Sep 17 16:24:17 2015 TAP-Win32 Driver Version 9.9 
+Thu Sep 17 16:24:17 2015 TAP-Win32 MTU=1500
+Thu Sep 17 16:24:17 2015 Notified TAP-Win32 driver to set a DHCP IP/netmask of 192.168.123.10/255.255.255.252 on interface {E22FCD56-4669-458C-99AA-B6AA9203800C} [DHCP-serv: 192.168.123.9, lease-time: 31536000]
+Thu Sep 17 16:24:17 2015 Successful ARP Flush on interface [13] {E22FCD56-4669-458C-99AA-B6AA9203800C}
+Thu Sep 17 16:24:22 2015 TEST ROUTES: 0/0 succeeded len=1 ret=0 a=0 u/d=down
+Thu Sep 17 16:24:22 2015 Route: Waiting for TUN/TAP interface to come up...
+Thu Sep 17 16:24:23 2015 TEST ROUTES: 2/2 succeeded len=1 ret=1 a=0 u/d=up
+Thu Sep 17 16:24:23 2015 C:\WINDOWS\system32\route.exe ADD 199.241.147.178 MASK 255.255.255.255 192.168.2.1
+Thu Sep 17 16:24:23 2015 ROUTE: CreateIpForwardEntry succeeded with dwForwardMetric1=25 and dwForwardType=4
+Thu Sep 17 16:24:23 2015 Route addition via IPAPI succeeded [adaptive]
+Thu Sep 17 16:24:23 2015 C:\WINDOWS\system32\route.exe ADD 0.0.0.0 MASK 128.0.0.0 192.168.123.9
+Thu Sep 17 16:24:23 2015 ROUTE: CreateIpForwardEntry succeeded with dwForwardMetric1=30 and dwForwardType=4
+Thu Sep 17 16:24:23 2015 Route addition via IPAPI succeeded [adaptive]
+Thu Sep 17 16:24:23 2015 C:\WINDOWS\system32\route.exe ADD 128.0.0.0 MASK 128.0.0.0 192.168.123.9
+Thu Sep 17 16:24:23 2015 ROUTE: CreateIpForwardEntry succeeded with dwForwardMetric1=30 and dwForwardType=4
+Thu Sep 17 16:24:23 2015 Route addition via IPAPI succeeded [adaptive]
+Thu Sep 17 16:24:23 2015 C:\WINDOWS\system32\route.exe ADD 192.168.123.1 MASK 255.255.255.255 192.168.123.9
+Thu Sep 17 16:24:23 2015 ROUTE: CreateIpForwardEntry succeeded with dwForwardMetric1=30 and dwForwardType=4
+Thu Sep 17 16:24:23 2015 Route addition via IPAPI succeeded [adaptive]
+Thu Sep 17 16:24:23 2015 Initialization Sequence Completed
